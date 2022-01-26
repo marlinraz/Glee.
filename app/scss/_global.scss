@@ -1,7 +1,24 @@
+html,
+body{
+    height: 100%;
+}
 
 
-.container{
+body{
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $desc;
+}
+
+.container {
     max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-box {
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
