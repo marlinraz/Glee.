@@ -2,6 +2,11 @@ $title: #243f4d;
 $accent: #436372;
 $desc: #7b7b7b;
 
+%rubik-300{
+    font-family: 'Rubik-Light', sans-serif;
+    font-weight: 300;
+}
+
 %rubik-500{
     font-family: 'Rubik-Medium', sans-serif;
     font-weight: 500;
@@ -12,9 +17,19 @@ $desc: #7b7b7b;
     font-weight: 400;
 }
 
+%nunito-700{
+    font-family: 'Nunito-Bold', sans-serif;
+    font-weight: 700;
+}
+
 %poppins-700{
     font-family: 'Poppins-Bold', sans-serif;
     font-weight: 700;
+}
+
+%poppins-600{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-weight: 600;
 }
 
 %dmsans-700{

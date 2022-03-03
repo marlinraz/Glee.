@@ -22,3 +22,8 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.title{
+    @extend %dmsans-700;
+    color: #191919;
+}
