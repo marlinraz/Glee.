@@ -621,11 +621,37 @@
     //margin-top: 15px;
     //padding: 15px 0;
     padding-top: 15px;
+    &__author,
+    &__date{
+        padding-left: 15px;
+    }
     &__author{
         @extend %rubik-400;
     font-size: 12px;
     color: #222933;
-    margin-left: 40px;
+    margin-left: 30px;
+    position: relative;
+    &::before{
+        content: '';
+        background-image: url(../images/icon/admin.svg);
+        width: 14px;
+        height: 13px;
+        position: absolute;
+        left: -3px;
+        top: 4px;
+    }
+    }
+    &__date{
+        position: relative;
+        &::before{
+            content: '';
+            background-image: url(../images/icon/calendar.svg);
+            width: 11px;
+            height: 13px;
+            position: absolute;
+            left: -3px;
+            top: 4px;
+        }
     }
 }
 
@@ -702,6 +728,116 @@
         color: $title;
         cursor: pointer;
     }
+}
+
+.contacts{
+    text-align: center;
+    margin-bottom: 120px;
+    &__subtitle{
+        color: #a3bbc8;
+        @extend %poppins-700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__title{
+        color: $accent;
+        font-size: 35px;
+        line-height: 57px;
+        margin-bottom: 70px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        background-color: #fbfbfb;
+        padding-bottom: 75px;
+        width: 370px;
+        border: 1px solid transparent;
+        transition: all .3s;
+        &:hover{
+            border: 1px solid #a3bbc8;
+            .cls-1{
+                fill: #a3bbc8;
+            }
+            .cls-2{
+                fill: #fff;
+            }
+        }
+    }
+    
+    &__text{
+        @extend %dmsans-700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #222222;
+        margin-bottom: 22px;
+    }
+    &__link{
+        color: #565872;
+        font-size: 16px;
+        line-height: 30px;
+        display: block;
+        @extend %rubik-400;
+    }
+}
+
+.contacts-box{
+    margin-bottom: 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input{
+        width: 300px;
+        margin-bottom: 25px;
+        padding: 20px 20px;
+        border: none;
+        background-color: #fafafa;
+         
+        margin-right: 20px;
+        
+        &::placeholder{
+           color: #565872; 
+           @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        }
+        
+    }
+    &__textarea{
+        width: 620px;
+        height: 175px;
+        border: none;
+        background-color: #fafafa;
+        resize: none;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        &::placeholder{
+            color: #565872; 
+            @extend %rubik-400;
+         font-size: 16px;
+         line-height: 30px;
+         
+         }
+         /* &::after{
+            content: '';
+            background-image: url(../images/icon/message.svg);
+            width: 18px;
+            height: 15px;
+        } */
+    }
+    &__btn{
+        border: none;
+        background-color: #a3bbc8;
+        @extend %poppins-600;
+        color: #fff;
+        font-size: 15px;
+        line-height: 55px;
+        padding: 0 40px;
+        cursor: pointer;
+    }
+    
 }
 
 
