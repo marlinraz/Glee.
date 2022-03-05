@@ -840,6 +840,40 @@
     
 }
 
+.terms{
+    color: #243f4d;
+    &__title{
+        @extend %rubik-500;
+        
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    &__list{
+        counter-reset: counter;
+        margin-bottom: 60px;
+    }
+    &__item{
+        margin-bottom: 30px;
+        padding-left: 40px;
+        position: relative;
+        &::before{
+            content: '0' counter(counter);
+        counter-increment: counter;
+        position: absolute;
+        left: 0;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 60px;
+        &:last-child{
+            margin-bottom: 110px;
+        }
+    }
+}
+
 
 
 
