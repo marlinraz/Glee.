@@ -6,9 +6,9 @@ body{
 
 body{
     @extend %rubik-400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
-    color: $desc;
+    color: $title;
 }
 
 .container {
@@ -26,6 +26,7 @@ body{
 .title{
     @extend %dmsans-700;
     color: $title;
+    font-size: 36px;
 }
 
 .top{
