@@ -25,7 +25,7 @@ body{
 
 .title{
     @extend %dmsans-700;
-    color: #191919;
+    color: $title;
 }
 
 .top{
@@ -76,3 +76,23 @@ body{
 }
 
 
+.glee__btn{
+        @extend %rubik-500;
+        color: $accent;
+        font-size: 15px;
+        line-height: 12px;
+        border: 1px solid rgb(67, 99, 114);
+        border-radius: 5px;
+        padding: 21px 86px 20px 21px;
+        position: relative;
+        &::after{
+            content: '';
+            background-image: url(../images/icon/arrow-left.svg);
+            position: absolute;
+            right: 20px;
+            top: 25px;
+            width: 22px;
+            height: 9px;
+        }
+    
+}
