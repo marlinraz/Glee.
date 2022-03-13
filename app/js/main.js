@@ -1,5 +1,9 @@
 $(function(){
 
+  $('.product-slide__input').styler({
+
+  });
+
   $('.filter-prise__input').ionRangeSlider({
     type: "double",
     prefix: "$",

@@ -1670,6 +1670,7 @@
         line-height: 30px;
         border-radius: 7px;
         margin-bottom: 55px;
+        margin-left: 15px;
     }
     &__item{
         display: flex;
@@ -1679,6 +1680,74 @@
         margin-bottom: 35px;
     }
 }
+
+.jq-number__field{
+    border: 1px solid #a3bbc8;
+    box-shadow: none;
+    border-radius: 0px;
+    width: 150px;
+    input{
+        border: none;
+        width: 150px;
+        height: 50px;
+        padding: 0;
+        text-align: center;
+        font-size: 15px;
+        @extend %rubik-400;
+        color: #333;
+        line-height: 46px;
+    }
+}
+.jq-number {
+    padding: 0;
+    position: relative;
+}
+
+.jq-number__spin {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 52px;
+    border: 1px solid #a3bbc8;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    top: 0;
+    &::after{
+        content: '';
+        height: 1px;
+        width: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 22px;
+        background-color: #333;
+        position: absolute;
+        
+    }
+}
+
+.jq-number__spin.minus {
+    left: 0;
+}
+
+.jq-number__spin.plus::before{
+    content: '';
+    height: 6px;
+    width: 1px;
+    position: absolute;
+    top: 44%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(50%);
+    background-color: #333;
+}
+
+.jq-number__spin.plus {
+    right: 0;
+}
+
+
 
 .product-tabs{
     margin-bottom: 100px;
